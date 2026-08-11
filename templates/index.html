@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Hero Section -->
+<section id="home" class="hero">
+  <h1>The VPuNk</h1>
+  <p class="tagline">"I'm not into politics. I'm into survival" — Ben Richards, The Running Man</p>
+  <p class="description">An exploration and compendium of the technical side of digital rights and cypherpunk mixed with bytes of random shit.</p>
+</section>
+
+<!-- Blog Section -->
+{% set posts = get_section(path="blog/_index.md") %}
+<section id="blog" class="scroll-section">
+  <h2 class="section-title">// blog</h2>
+
+  {% if posts.pages %}
+  <!-- Featured Article -->
+  {% set featured = posts.pages | first %}
+  {% if featured %}
+  <article class="featured-article">
+    <div class="meta">
+      <span class="date">{{ featured.date | date(format="%Y.%m.%d") }}</span>
+      <span>::</span>
+      <span>{{ featured.reading_time }} min read</span>
+    </div>
+    <h2><a href="{{ featured.permalink }}">{{ featured.title }}</a></h2>
+    <p class="excerpt">{{ featured.description }}</p>
+    <a class="read-more" href="{{ featured.permalink }}">read more →</a>
+  </article>
+  {% endif %}
+
+  <!-- Article Grid -->
+  <div class="article-grid">
+    {% for post in posts.pages %}
+    {% if post.slug != featured.slug %}
+    <article class="article-card">
+      <div class="meta">
+        <span class="date">{{ post.date | date(format="%Y.%m.%d") }}</span>
+        <span>::</span>
+        <span>{{ post.reading_time }} min read</span>
+      </div>
+      <h3><a href="{{ post.permalink }}">{{ post.title }}</a></h3>
+      <p class="excerpt">{{ post.description }}</p>
+      {% if post.taxonomies.tags %}
+      <div class="tags">
+        {% for tag in post.taxonomies.tags %}
+        <span class="tag">#{{ tag }}</span>
+        {% endfor %}
+      </div>
+      {% endif %}
+      <a class="read-more" href="{{ post.permalink }}">read more →</a>
+    </article>
+    {% endif %}
+    {% endfor %}
+  </div>
+  {% else %}
+  <div class="empty-state">
+    <p class="text-muted">No posts yet. Check back soon.</p>
+  </div>
+  {% endif %}
+</section>
+
+<!-- Subscribe Section -->
+<section id="subscribe" class="scroll-section">
+  <h2 class="section-title">// subscribe</h2>
+  <div class="subscribe-content">
+    <p>Get new posts delivered to your inbox. No spam, just digital rights and cypherpunk content.</p>
+    <form class="subscribe-form" action="#" method="POST">
+      <input type="email" placeholder="your@email.com" required>
+      <button type="submit">subscribe →</button>
+    </form>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="scroll-section">
+  <h2 class="section-title">// connect</h2>
+  <div class="contact-content">
+    <p>Find me on the interwebs:</p>
+    <div class="social-links">
+      <a href="https://github.com/blockhackersio">GitHub</a>
+      <a href="https://vpunk.sh/atom.xml">RSS Feed</a>
+    </div>
+  </div>
+</section>
+{% endblock content %}

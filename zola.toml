@@ -1,0 +1,10 @@
+base_url = "https://jeancaro-iriarte.github.io/vpunk-blog"
+title = "The VPuNk"
+description = "All things digital rights"
+default_language = "en"
+build_search_index = false
+
+[extra]
+author = "JeanCaro Iriarte"
+email = "contact@vpunk.sh"
+theme_color = "#00ff41"
