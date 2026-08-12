@@ -9,9 +9,9 @@
 </section>
 
 <!-- Blog Section -->
-{% set posts = get_section(path="blog/_index.md") %}
-<section id="blog" class="scroll-section">
-  <h2 class="section-title">// blog</h2>
+{% set posts = get_section(path="news/_index.md") %}
+<section id="news" class="scroll-section">
+  <h2 class="section-title">// news</h2>
 
   {% if posts.pages %}
   <!-- Featured Article -->
@@ -55,7 +55,7 @@
   </div>
   {% else %}
   <div class="empty-state">
-    <p class="text-muted">No posts yet. Check back soon.</p>
+    <p class="text-muted">No news yet. Check back soon.</p>
   </div>
   {% endif %}
 </section>

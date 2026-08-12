@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 
-{% block title %}Blog | {{ config.title }}{% endblock %}
+{% block title %}News | {{ config.title }}{% endblock %}
 
 {% block content %}
 <section style="padding-bottom: 2rem;">
-  <h1 class="section-title" style="border-bottom: none; margin-bottom: 1rem;">Blog</h1>
-  <p class="text-muted">Articles on digital rights, privacy, and cypherpunk.</p>
+  <h1 class="section-title" style="border-bottom: none; margin-bottom: 1rem;">News</h1>
+  <p class="text-muted">Latest entries and links.</p>
 </section>
 
 {% if section.pages %}
@@ -19,6 +19,9 @@
     </div>
     <h3><a href="{{ post.permalink }}">{{ post.title }}</a></h3>
     <p class="excerpt">{{ post.description }}</p>
+    {% if post.extra.source_url %}
+    <p class="excerpt"><a href="{{ post.extra.source_url }}" target="_blank" rel="noopener">source ↗</a></p>
+    {% endif %}
     {% if post.taxonomies.tags %}
     <div class="tags">
       {% for tag in post.taxonomies.tags %}
@@ -32,8 +35,8 @@
 </div>
 {% else %}
 <section class="text-center" style="padding: 4rem 0;">
-  <h2 class="section-title">Human-written articles coming soon</h2>
-  <p class="text-muted">Check back soon for articles on digital rights, privacy, and cypherpunk.</p>
+  <h2 class="section-title">No news yet</h2>
+  <p class="text-muted">Check back soon.</p>
 </section>
 {% endif %}
 {% endblock content %}
