@@ -309,6 +309,41 @@ main {
   text-shadow: 0 0 10px var(--accent-glow);
 }
 
+/* === Headlines List (home) === */
+.headlines-list {
+  list-style: none;
+  padding: 0;
+}
+
+.headlines-list li {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.headlines-list li:last-child {
+  border-bottom: none;
+}
+
+.headlines-list .date {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.headlines-list a {
+  font-family: var(--font-mono);
+  font-size: 1.05rem;
+  color: var(--text-primary);
+}
+
+.headlines-list a:hover {
+  color: var(--accent);
+}
+
 /* === Featured Article === */
 .featured-article {
   background: var(--bg-card);
@@ -445,6 +480,53 @@ main {
   height: auto;
   margin: 2rem 0;
   border: 1px solid var(--border);
+}
+
+/* === Summary Box (note page) === */
+.post-content .summary-box {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  border-left: 3px solid var(--accent);
+  padding-left: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* === Source Link === */
+.post-content .source-link {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+
+.post-content .source-link a {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  padding: 0.6rem 1.4rem;
+}
+
+.post-content .source-link a:hover {
+  background: var(--accent);
+  color: #000;
+  text-shadow: none;
+}
+
+.article-card .source-link {
+  margin-top: 1rem;
+}
+
+.article-card .source-link a {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--accent);
+}
+
+.article-card .source-link a:hover {
+  text-shadow: 0 0 10px var(--accent-glow);
 }
 
 /* === Footer === */

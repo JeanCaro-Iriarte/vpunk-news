@@ -6,4 +6,8 @@ tags = ["cybersecurity", "tech-industry", "unread"]
 extra.source_url = "https://www.tomshardware.com/tech-industry/cyber-security/passenger-returning-from-def-con-34-spoofs-delta-wi-fi-network-while-in-flight-using-pentest-tool-pilots-tell-ground-crew-to-alert-corporate-security-after-attendee-from-hacking-conference-brings-the-party-to-the-sky"
 +++
 
-A flight carrying passengers who attended a cybersecurity convention reportedly had its Wi-Fi network victimized by deauthentication attacks while an 'evil twin' hotspot rerouted potential victims to a phishing website. While flight safety was never affected, it's unclear if any of the other passengers had their credentials stolen while in the air.
+A passenger on a commercial flight had its Delta Wi-Fi network spoofed en route from DEF CON 34, where they attended a cybersecurity conference.
+
+Flight attendants became aware of the issue after receiving reports that crew members were experiencing difficulties connecting to the internet. They told ground staff about potential hacking and malicious activity on the network, which led them to suspect a corporate security threat.
+
+An investigation is ongoing into the incident while flights carrying other passengers proceed normally.

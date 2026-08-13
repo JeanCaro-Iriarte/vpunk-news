@@ -14,45 +14,15 @@
   <h2 class="section-title">// news</h2>
 
   {% if posts.pages %}
-  <!-- Featured Article -->
-  {% set featured = posts.pages | first %}
-  {% if featured %}
-  <article class="featured-article">
-    <div class="meta">
-      <span class="date">{{ featured.date | date(format="%Y.%m.%d") }}</span>
-      <span>::</span>
-      <span>{{ featured.reading_time }} min read</span>
-    </div>
-    <h2><a href="{{ featured.permalink }}">{{ featured.title }}</a></h2>
-    <p class="excerpt">{{ featured.description }}</p>
-    <a class="read-more" href="{{ featured.permalink }}">read more →</a>
-  </article>
-  {% endif %}
-
-  <!-- Article Grid -->
-  <div class="article-grid">
+  <!-- Headlines List -->
+  <ul class="headlines-list">
     {% for post in posts.pages %}
-    {% if post.slug != featured.slug %}
-    <article class="article-card">
-      <div class="meta">
-        <span class="date">{{ post.date | date(format="%Y.%m.%d") }}</span>
-        <span>::</span>
-        <span>{{ post.reading_time }} min read</span>
-      </div>
-      <h3><a href="{{ post.permalink }}">{{ post.title }}</a></h3>
-      <p class="excerpt">{{ post.description }}</p>
-      {% if post.taxonomies.tags %}
-      <div class="tags">
-        {% for tag in post.taxonomies.tags %}
-        <span class="tag">#{{ tag }}</span>
-        {% endfor %}
-      </div>
-      {% endif %}
-      <a class="read-more" href="{{ post.permalink }}">read more →</a>
-    </article>
-    {% endif %}
+    <li>
+      <span class="date">{{ post.date | date(format="%Y.%m.%d") }}</span>
+      <a href="{{ post.permalink }}">{{ post.title }}</a>
+    </li>
     {% endfor %}
-  </div>
+  </ul>
   {% else %}
   <div class="empty-state">
     <p class="text-muted">No news yet. Check back soon.</p>

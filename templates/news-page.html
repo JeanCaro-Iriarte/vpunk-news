@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}{{ page.title }} | {{ config.title }}{% endblock %}
+{% block description %}{{ page.description }}{% endblock %}
+
+{% block content %}
+<article class="post-content">
+  <h1>{{ page.title }}</h1>
+
+  <div class="post-meta">
+    <span>{{ page.date | date(format="%B %d, %Y") }}</span>
+    <span>::</span>
+    <span>{{ page.reading_time }} min read</span>
+    {% if page.taxonomies.tags %}
+    <span>::</span>
+    <span>
+      {% for tag in page.taxonomies.tags %}
+        #{{ tag }}{% if not loop.last %}, {% endif %}
+      {% endfor %}
+    </span>
+    {% endif %}
+  </div>
+
+  {% if page.description %}
+  <div class="summary-box">{{ page.description }}</div>
+  {% endif %}
+
+  {{ page.content | safe }}
+
+  {% if page.extra.source_url %}
+  <div class="source-link">
+    <a href="{{ page.extra.source_url }}" target="_blank" rel="noopener">Read full article ↗</a>
+  </div>
+  {% endif %}
+</article>
+{% endblock content %}

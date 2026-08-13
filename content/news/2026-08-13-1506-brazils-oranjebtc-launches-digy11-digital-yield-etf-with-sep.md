@@ -6,4 +6,8 @@ tags = ["bitcoin", "bitcoin-etf", "crypto-market", "crypto-markets", "crypto-new
 extra.source_url = "https://coingape.com/brazils-oranjebtc-launches-digy11-digital-yield-etf-with-september-b3-debut/"
 +++
 
-Brazilian Bitcoin treasury company OranjeBTC has launched the DIGY11 Digital Yield ETF, offering local investors access to preferred securities from Bitcoin treasury companies through a Brazilian real-denominated investment product. Ad Ad OranjeBTC Plans DIGY11 Listing on B3 in September OranjeBTC said DIGY11 is expected to begin trading on Brazil’s B3 stock exchange in early September. The post Brazil’s OranjeBTC Launches DIGY11 Digital Yield ETF With September B3 Debut appeared first on CoinGape.
+OranjeBTC, a Brazilian Bitcoin treasury company, has launched the DIGY11 Digital Yield ETF, which allows local investors to access preferred securities from Bitcoin treasury companies through a real-denominated investment product.
+
+The launch is set for an initial public offering (IPO) debut of the DIGY11 on Brazil's B3 stock exchange in early September. 
+
+OranjeBTC plans to list its cryptocurrency fund on the Brazilian stock exchange, with shares expected to begin trading around that time.

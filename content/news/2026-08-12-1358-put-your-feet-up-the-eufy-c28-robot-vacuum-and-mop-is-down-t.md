@@ -6,4 +6,4 @@ tags = ["unread", "vacuum-cleaners"]
 extra.source_url = "https://www.cnet.com/deals/eufy-c28-robot-vacuum-and-mop-deal/"
 +++
 
-Save 38% off on a robot with 15,000Pa suction, HydroJet roller and an all-in-one station that gives you up to 75 days of hands-free cleaning.
+The Eufy C28 Robot Vacuum and Mop has been discounted to $500, taking savings to 38% off its original price. The robot vacuum features a powerful 15,000Pa suction system, a HydroJet roller for efficient cleaning, and an all-in-one station with up to 75 days of hands-free maintenance.

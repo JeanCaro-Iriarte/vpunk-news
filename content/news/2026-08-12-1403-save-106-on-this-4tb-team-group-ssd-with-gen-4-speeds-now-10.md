@@ -6,4 +6,8 @@ tags = ["pc-components", "ssds", "storage", "unread"]
 extra.source_url = "https://www.tomshardware.com/pc-components/ssds/save-usd106-on-this-4tb-team-group-ssd-with-gen-4-speeds-now-10-2-cents-per-gb-newegg-coupon-deal-makes-this-t-force-g50-one-of-the-cheapest-pcie-4-0-drives-on-sale-right-now-with-this-amount-of-storage"
 +++
 
-Get $106 off this 4TB TeamGroup T-Force G50 SSD, offering Gen 4 speeds and a huge capacity for a price that's hard to rival right now.
+A coupon has been found on Newegg that offers a discount of $106 on the 4TB Team Group T-Force G50 SSD. This brings the current price down to around 10.2 cents per gigabyte.
+
+The SSD is currently available for purchase online, and it features Gen 4 speeds, making it suitable for fast data transfer needs.
+
+This deal makes the T-Force G50 one of the cheapest PCIe 4.0 drives on sale right now.

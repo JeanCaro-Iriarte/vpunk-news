@@ -6,4 +6,8 @@ tags = ["controllers-and-gamepads", "peripherals", "unread"]
 extra.source_url = "https://www.tomshardware.com/peripherals/controllers-gamepads/this-usd57-99-8bitdo-ultimate-2-wireless-controller-is-a-brilliantly-customizable-option-for-pc-gamers-fully-customizable-gamepad-with-nintendo-switch-compatibility-includes-dual-triggers-tmr-joysticks-and-adjustable-rgb-lighting"
 +++
 
-Save 17% on this 8BitDo Ultimate 2 game controller for your PC or Nintendo Switch right now.
+The 8BitDo Ultimate 2 is a wireless game controller available for purchase, priced at $57.99. This option allows for customizable gameplay experience.
+
+The controller features fully customizable aspects, including dual triggers and TMR (Touch Matrix Revolution) joysticks, which are compatible with Nintendo Switch devices. 
+
+A discount of 17% is offered on this product.

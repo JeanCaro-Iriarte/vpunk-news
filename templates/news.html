@@ -20,7 +20,7 @@
     <h3><a href="{{ post.permalink }}">{{ post.title }}</a></h3>
     <p class="excerpt">{{ post.description }}</p>
     {% if post.extra.source_url %}
-    <p class="excerpt"><a href="{{ post.extra.source_url }}" target="_blank" rel="noopener">source ↗</a></p>
+    <p class="source-link"><a href="{{ post.extra.source_url }}" target="_blank" rel="noopener">source ↗</a></p>
     {% endif %}
     {% if post.taxonomies.tags %}
     <div class="tags">
@@ -29,7 +29,6 @@
       {% endfor %}
     </div>
     {% endif %}
-    <a class="read-more" href="{{ post.permalink }}">read more →</a>
   </article>
   {% endfor %}
 </div>
